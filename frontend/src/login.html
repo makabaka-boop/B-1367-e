@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 - DriveGo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-header">
+        <a href="index.html" class="logo">DriveGo</a>
+        <h2 class="login-title">欢迎回来</h2>
+        <div class="login-prompt"
+          style="background:#e3f2fd; color:#1565c0; padding:10px; border-radius:4px; font-size:12px; margin:10px 0;">
+          测试账号: admin &nbsp;|&nbsp; 密码: admin123
+        </div>
+        <p class="login-subtitle">请登录您的账户以继续</p>
+      </div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">账号</label>
+          <input type="text" id="email" class="form-control" placeholder="用户名/邮箱 (admin)">
+        </div>
+
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" id="password" class="form-control" placeholder="请输入密码">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">登录</button>
+      </form>
+
+      <div class="login-footer">
+        <p>还没有账号？ <a href="#" class="link-primary register">立即注册</a></p>
+        <a href="index.html" class="back-link">返回首页</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

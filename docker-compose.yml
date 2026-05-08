@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ./frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend/src:/usr/share/nginx/html
+
+  tests:
+    image: mcr.microsoft.com/playwright:v1.41.0-jammy
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    environment:
+      - BASE_URL=http://frontend:80
+      - CI=true
+    command: /bin/sh -c "npm install && npx playwright test"
+    depends_on:
+      - frontend
