@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveGo - 高端租车服务</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">DriveGo</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">寻找车辆</a></li>
+          <li><a href="#" class="nav-link">价格方案</a></li>
+          <li><a href="#" class="nav-link">关于我们</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="btn btn-primary login-btn">登录</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">寻找您的完美座驾</h1>
+      <p class="hero-subtitle">无论是商务出行还是周末度假，我们都能为您提供极致体验。</p>
+
+      <!-- Search Filter -->
+      <div class="search-filter">
+        <div class="filter-group">
+          <label for="location">取车地点</label>
+          <div class="input-wrapper">
+            <input type="text" id="location" placeholder="城市或机场">
+          </div>
+        </div>
+        <div class="filter-group">
+          <label for="date">取车日期</label>
+          <div class="input-wrapper">
+            <input type="date" id="date">
+          </div>
+        </div>
+        <div class="filter-group">
+          <label for="type">车型选择</label>
+          <div class="input-wrapper">
+            <select id="type">
+              <option value="">所有车型</option>
+              <option value="sedan">轿车</option>
+              <option value="suv">SUV</option>
+              <option value="luxury">豪华跑车</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary search-btn" id="search-btn">搜索车辆</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Grid Section -->
+  <section class="car-section">
+    <div class="container">
+      <h2 class="section-title">热门推荐</h2>
+      <div class="car-grid">
+        <!-- Car Card 1 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/tesla.jpg" alt="特斯拉 Model S" class="car-image">
+            <span class="badge-premium">豪华优选</span>
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">Tesla Model S (特斯拉)</h3>
+              <span class="car-price">¥850<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">自动挡</span>
+              <span class="feature-item">纯电</span>
+              <span class="feature-item">5座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+
+        <!-- Car Card 2 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/audi.jpg" alt="奥迪 Q7" class="car-image">
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">奥迪 Q7</h3>
+              <span class="car-price">¥1050<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">自动挡</span>
+              <span class="feature-item">柴油</span>
+              <span class="feature-item">7座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+
+        <!-- Car Card 3 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/bmw.jpg" alt="宝马 M4" class="car-image">
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">宝马 M4</h3>
+              <span class="car-price">¥1280<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">自动挡</span>
+              <span class="feature-item">汽油</span>
+              <span class="feature-item">4座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+
+        <!-- Car Card 4 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/jeep.jpg" alt="牧马人" class="car-image">
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">Jeep 牧马人</h3>
+              <span class="car-price">¥650<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">手动挡</span>
+              <span class="feature-item">柴油</span>
+              <span class="feature-item">5座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+
+        <!-- Car Card 5 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/porsche.jpg" alt="保时捷 911" class="car-image">
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">保时捷 911</h3>
+              <span class="car-price">¥1800<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">自动挡</span>
+              <span class="feature-item">汽油</span>
+              <span class="feature-item">2座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+
+        <!-- Car Card 6 -->
+        <article class="car-card">
+          <div class="car-image-wrapper">
+            <img src="assets/images/camaro.jpg" alt="雪佛兰 科迈罗" class="car-image">
+          </div>
+          <div class="car-details">
+            <div class="car-header">
+              <h3 class="car-name">雪佛兰 科迈罗</h3>
+              <span class="car-price">¥780<small>/天</small></span>
+            </div>
+            <div class="car-features">
+              <span class="feature-item">自动挡</span>
+              <span class="feature-item">汽油</span>
+              <span class="feature-item">4座</span>
+            </div>
+            <button class="btn btn-outline rent-btn">立即租车</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-column">
+        <a href="#" class="footer-logo">DriveGo</a>
+        <p class="footer-desc">为您提供最优质的租车服务，安全、快捷、豪华。</p>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">公司信息</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="pending-feature">关于我们</a></li>
+          <li><a href="#" class="pending-feature">招贤纳士</a></li>
+          <li><a href="#" class="pending-feature">公司博客</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">客户支持</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="pending-feature">帮助中心</a></li>
+          <li><a href="#" class="pending-feature">服务条款</a></li>
+          <li><a href="#" class="pending-feature">隐私政策</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">关注我们</h4>
+        <div class="social-links">
+          <a href="#" class="social-link pending-feature">微信</a>
+          <a href="#" class="social-link pending-feature">微博</a>
+          <a href="#" class="social-link pending-feature">抖音</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 DriveGo 租车. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
